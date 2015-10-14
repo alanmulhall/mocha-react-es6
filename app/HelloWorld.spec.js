@@ -11,11 +11,10 @@ let expect = chai.expect;
 describe("HelloWorld", () => {
 
     it("renders 'Hello World!'", () => {
-        let helloWorld;
-        const item = React.addons.TestUtils.renderIntoDocument(
+        const component = React.addons.TestUtils.renderIntoDocument(
             <HelloWorld />
         );
-        const greeting = React.findDOMNode(item.refs.greeting);
+        const greeting = React.findDOMNode(component.refs.greeting);
 
         expect(greeting.textContent).to.equal("Hello World!");
     });
