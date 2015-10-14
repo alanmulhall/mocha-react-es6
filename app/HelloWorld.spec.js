@@ -6,7 +6,7 @@ import chai from "chai";
 import HelloWorld from "./HelloWorld";
 import setup from "./setup";
 
-let expect = chai.expect;
+const expect = chai.expect;
 
 describe("HelloWorld", () => {
 
