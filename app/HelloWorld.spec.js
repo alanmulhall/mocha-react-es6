@@ -16,6 +16,6 @@ describe("HelloWorld", () => {
         );
         const greeting = React.findDOMNode(component.refs.greeting);
 
-        expect(greeting.textContent).to.equal("Hello World!");
+        expect(greeting.textContent).to.equal("Hello World");
     });
 });
